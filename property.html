@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Details — JAT Global Property Limited</title>
+<meta name="description" content="Property details, pricing and features from JAT Global Property Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-line1">JAT GLOBAL</span>
+      <span class="brand-line2">PROPERTY LIMITED</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-whatsapp btn-sm" data-whatsapp="general">
+        <svg class="btn-icon-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.256c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.822 9.822 0 0 1 2.893 6.994c-.003 5.45-4.437 9.88-9.885 9.88zm8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.304-1.654a11.87 11.87 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
+        <span class="btn-label-full">WhatsApp Us</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="properties.html">Properties</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="#" class="btn btn-whatsapp btn-block" data-whatsapp="general">Chat on WhatsApp</a>
+</div>
+
+<main id="property-detail">
+  <div class="container" style="padding-top:28px">
+    <p class="breadcrumb" style="color:var(--ink-500)"><a href="index.html" style="color:var(--forest-700)">Home</a> / <a href="properties.html" style="color:var(--forest-700)">Properties</a> / <span id="breadcrumb-title">Property</span></p>
+  </div>
+
+  <div class="container">
+    <div class="gallery">
+      <div class="gallery-main">
+        <img id="gallery-main-img" src="" alt="Property photo">
+      </div>
+      <div class="gallery-thumbs" id="gallery-thumbs"></div>
+    </div>
+
+    <div class="detail-grid">
+      <div>
+        <div class="detail-header">
+          <div>
+            <h1 class="detail-title" id="detail-title">Property Title</h1>
+            <div class="detail-location">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span id="detail-location">Location</span>
+            </div>
+          </div>
+          <div class="detail-price-block">
+            <div class="detail-price" id="detail-price">₦0</div>
+            <span class="detail-status" id="detail-status">Status</span>
+          </div>
+        </div>
+
+        <div class="spec-strip" id="spec-strip"></div>
+
+        <div class="detail-block">
+          <h3>About This Property</h3>
+          <p id="detail-description"></p>
+        </div>
+
+        <div class="detail-block">
+          <h3>Features</h3>
+          <ul class="feature-list" id="feature-list"></ul>
+        </div>
+
+        <div class="detail-block" style="margin-bottom:0">
+          <h3>Nearby Locations &amp; Landmarks</h3>
+          <ul class="nearby-list" id="nearby-list"></ul>
+        </div>
+      </div>
+
+      <aside class="sticky-contact">
+        <h4>Interested in this property?</h4>
+        <p>Reach out directly — an agent will respond with more information and next steps.</p>
+        <a href="#" class="btn btn-whatsapp btn-block" data-whatsapp-property="">
+          <svg class="btn-icon-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.256c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.822 9.822 0 0 1 2.893 6.994c-.003 5.45-4.437 9.88-9.885 9.88zm8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.304-1.654a11.87 11.87 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <button type="button" class="btn btn-outline btn-block" data-inspection-trigger="">Book an Inspection</button>
+        <a href="contact.html" class="btn btn-outline btn-block">Send an Enquiry</a>
+      </aside>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">You May Also Like</span>
+        <h2>Similar Properties</h2>
+      </div>
+      <div class="property-grid" id="related-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-line1">JAT GLOBAL</div>
+        <div class="brand-line2">PROPERTY LIMITED</div>
+        <p class="footer-tagline">Real estate opportunities made easier.</p>
+        <div class="footer-social" style="margin-top:22px">
+          <a href="https://instagram.com/jat_global_propertylimited" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://facebook.com/JatGlobalPropertyLimited" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get In Touch</h5>
+        <ul class="footer-links">
+          <li><a href="mailto:ailemejoy@gmail.com">ailemejoy@gmail.com</a></li>
+          <li><a href="#" data-whatsapp="general">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Location</h5>
+        <p style="font-size:14px">Lagos, Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 JAT Global Property Limited. All rights reserved.</span>
+      <span>Concept demo — not the live company website.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="float-whatsapp" data-whatsapp="general" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.256c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.822 9.822 0 0 1 2.893 6.994c-.003 5.45-4.437 9.88-9.885 9.88zm8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.304-1.654a11.87 11.87 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close gallery">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="Property photo, enlarged">
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<!-- Inspection modal -->
+<div class="modal-overlay" id="inspection-modal">
+  <div class="modal">
+    <button class="modal-close" id="inspection-close" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div id="inspection-form-wrap">
+      <h3>Book an Inspection</h3>
+      <p>Tell us a little about you and we'll confirm a time to view the property.</p>
+      <form id="inspection-form">
+        <div class="form-group">
+          <label for="i-name">Full Name</label>
+          <input type="text" id="i-name" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="i-phone">Phone Number</label>
+          <input type="tel" id="i-phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="i-date">Preferred Date</label>
+          <input type="date" id="i-date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="i-message">Message (optional)</label>
+          <textarea id="i-message" name="message" placeholder="Anything you'd like us to know ahead of the visit"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Request Inspection</button>
+      </form>
+    </div>
+
+    <div class="success-state" id="inspection-success">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>Inspection Request Received</h3>
+      <p>Thank you — we've noted your preferred date and an agent will confirm the details with you shortly.</p>
+      <div class="success-actions">
+        <a href="#" id="inspection-success-whatsapp" class="btn btn-whatsapp" target="_blank" rel="noopener">Continue on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/main.js"></script>
+<script src="js/property.js"></script>
+</body>
+</html>
